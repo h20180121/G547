@@ -25,7 +25,7 @@ do{
   if(fd  == -1)
   {
   
-    printf("Locked\n",adxl_x);
+    printf("Locked\n");
     exit(-1);
   }
   
@@ -39,7 +39,7 @@ do{
   if(fd  == -1)
   {
   
-    printf("Locked\n",adxl_y);
+    printf("Locked\n");
     exit(-1);
   }
   
@@ -53,15 +53,13 @@ do{
   if(fd  == -1)
   {
   
-    printf("Locked\n",adxl_z);
+    printf("Locked\n");
     exit(-1);
   }
   
   read(fd,&lol,2);
   printf("Z axis  is %d\n",lol);
   }
-
-else if(n==9)
 //printf("Bye\n");
 else
 printf("Wrong Button pressed\n");
